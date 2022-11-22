@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import "./var.scss";
+*{padding:0;margin: 0;box-sizing: border-box;text-decoration: none;list-style: none;font-family: 'Noto Sans KR', sans-serif;}
+#wrap{
+  background: #F9F7F7;
+  &.on{
+    // background: #EFF5F5;
+    background-color: rgba(0,0,0,.3);
+      .item{
+      }
+  }
+  h1{
+    font-size: 4rem;
+    text-align: center;
+    padding: 100px 0;
+    color: #3F72AF;
+  }
+  .items{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:70px 0;
+    justify-items:center;
+    .item{
+      cursor: pointer;
+      position: relative;
+      width:380px;
+      height: 300px;
+      border:1px solid rgba(0,0,0,.3);
+      border-radius: 7px;
+      h2{
+        font-size: 22px;
+        position: absolute;
+        bottom:-40px;
+      }
+    }
+    .item1{
+      background:url(../img/item1.jpg) no-repeat center/cover;
+    }
+    .item2{
+      background:url(../img/item2.jpg) no-repeat center/cover;
+    }
+    .item3{
+      background:url(../img/item3.jpg) no-repeat center/cover;
+    }
+    .item4{
+      background:url(../img/item4.jpg) no-repeat center/cover;
+    }
+  }
+  .modal{
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    background-color: #F9F7F7;
+    width: 80vw;
+    height: 80vh;
+    border-radius: 10px;
+    display: none;
+    &.on{
+      display: block;
+    }
+    .inner{
+      width: 100%;
+      height: 100%;
+      padding: 15px;
+      .cancel-bar{
+        cursor: pointer;
+        float: right;
+        text-align: right;
+        font-size: 34px;
+        color:$modalMainTitleColor;
+      }
+      h3{
+        margin: 30px 0;
+        text-align: center;
+        font-size: 28px;
+        color:$modalMainTitle;
+      }
+      .content{    
+        width: 100%;
+        height: 100%;
+        position: relative; 
+        display: flex;
+        .left{
+          flex:45%;
+          .device{
+            .monitor{
+              background: url(../img/device/monitor/baskin-img.jpg) no-repeat 50% 13%/92%;
+              // background-repeat: no-repeat;
+              // background-position: 50% 13%;
+              // background-size: 92%;
+              position: absolute;
+              img{
+                // max-width: 30%;
+                width: 320px;
+                height: 280px;
+              }
+            }
+            .tablet{
+              background: url(../img/device/tablet/baskin-img.jpg) no-repeat 49% 47%/65%;
+              position: absolute;
+              top: 78px;
+              left: 222px;
+              img{
+                // max-width: 40%;
+                width: 220px;
+                height: 290px;
+              }
+            }
+            .phone{
+              background: url(../img/device/phone/baskin-img.jpg) no-repeat 49% 47%/73%;
+              position: absolute;
+              top: 217px;
+              left: 363px;
+              img{
+                // max-width: 21%;
+                width:120px;
+                height: 200px;
+              }
+            }
+          }
+          .site-btn{
+            position: absolute;
+            left:75px;
+            top: 445px;
+            display: flex;
+            font-size: 18px;
+            & > *{
+              border:1px solid black;
+              padding: 5px;
+              a{
+                display: block;
+                width: 100%;
+                height: 100%;
+              }
+            }
+            .this-view{
+              margin-right: 50px;
+            }
+          }
+        }
+        .right{
+          flex:55%;
+          .tools{
+            h4{
+              font-size: 34px;
+              margin-bottom: 20px;
+              & ~ h4{
+                margin-top: 30px;
+              }
+            }
+            p{
+
+              color:#666666;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width:1360px){
+  #wrap{
+    h1{
+      font-size: 7vw;
+    }
+    .items{
+      grid-template-columns: repeat(2,1fr);
+    }
+  }
+}
+
+@media all and (max-width:1024px){
+  #wrap{
+    .items{
+      grid-template-columns: repeat(1,1fr);
+    }
+  }
+}
+
+@media all and (max-width:767px){
+  #wrap{
+    .items{
+      .item{
+        width:280px;
+        height:200px;
+      }
+    }
+  }
+}
+
+@media all and (max-width:480px){
+  #wrpa{
+    .items{
+      .item{
+        width:240px;
+        height:160px;
+      }
+    }
+  }
+}
