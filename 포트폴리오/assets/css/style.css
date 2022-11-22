@@ -59,10 +59,8 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  background-color: #ffb6c1;
   width: 80vw;
   height: 80vh;
-  border-radius: 10px;
   display: none;
 }
 #wrap .modal.on {
@@ -72,26 +70,31 @@
   width: 100%;
   height: 100%;
   padding: 15px 15px 15px 100px;
+  border-radius: 10px;
 }
 #wrap .modal .inner.toss-modal {
+  background-color: #619bed;
   display: none;
 }
 #wrap .modal .inner.toss-modal.active {
   display: block;
 }
 #wrap .modal .inner.baskin-modal {
+  background-color: #ffb6c1;
   display: none;
 }
 #wrap .modal .inner.baskin-modal.active {
   display: block;
 }
 #wrap .modal .inner.lottConf-modal {
+  background-color: #da291c;
   display: none;
 }
 #wrap .modal .inner.lottConf-modal.active {
   display: block;
 }
 #wrap .modal .inner.nexongames-modal {
+  background-color: #191b1d;
   display: none;
 }
 #wrap .modal .inner.nexongames-modal.active {
