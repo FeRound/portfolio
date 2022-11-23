@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -17,9 +18,11 @@ h1 {
 }
 
 h2 {
-  font-size: 22px;
+  font-family: "Gamja Flower", cursive;
+  font-size: 28px;
   position: absolute;
-  bottom: -40px;
+  bottom: -48px;
+  color: #222222;
 }
 
 h3 {
@@ -31,11 +34,16 @@ h3 {
 }
 
 h4 {
+  font-family: "Gamja Flower", cursive;
   font-size: 34px;
   margin-bottom: 20px;
 }
 h4 ~ h4 {
   margin-top: 30px;
+}
+
+p, a {
+  font-family: "IBM Plex Sans KR", sans-serif;
 }
 
 #wrap {
@@ -76,14 +84,14 @@ h4 ~ h4 {
 #wrap .modal {
   position: fixed;
   left: 50%;
-  top: 50%;
+  top: -50%;
   transform: translate(-50%, -50%);
   width: 80vw;
   height: 80vh;
-  display: none;
+  transition: 1s;
 }
 #wrap .modal.on {
-  display: block;
+  transform: translate(-50%, 75%);
 }
 #wrap .modal .inner {
   width: 100%;
@@ -162,13 +170,13 @@ h4 ~ h4 {
 }
 #wrap .modal .inner .content .left .site-btn {
   position: absolute;
-  left: 75px;
+  left: 50px;
   top: 445px;
   display: flex;
   font-size: 18px;
 }
 #wrap .modal .inner .content .left .site-btn > * {
-  border: 1px solid black;
+  border: 1px solid rgba(0, 0, 0, 0.3);
   padding: 5px;
 }
 #wrap .modal .inner .content .left .site-btn > * a {

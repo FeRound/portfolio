@@ -4,14 +4,14 @@ const wrap = document.querySelector("#wrap") // 최상위부모
 const modalCancelBtn = document.querySelectorAll(".cancel-bar") // x버튼
 
 for(let i = 0; i < item.length; i++){
-  item[i].addEventListener("click",modalOn);
+  item[i].addEventListener("click",modalToggle);
 }
 
 for(let i = 0; i < modalCancelBtn.length; i++){
-  modalCancelBtn[i].addEventListener("click",modalOn);
+  modalCancelBtn[i].addEventListener("click",modalToggle);
 }
 
-function modalOn(){ // 모달 창 띄우기
+function modalToggle(){ // 모달 창 띄우기
   modal.classList.toggle("on");
   wrap.classList.toggle("on");
   
