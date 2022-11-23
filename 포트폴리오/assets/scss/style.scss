@@ -86,31 +86,79 @@ p,a{
     }
     .inner{
       &.toss-modal{
-        background-color: $toss-primary-color;
+        // background-color: $toss-primary-color;
+        background: linear-gradient(225deg, rgba(255,255,255,1) 35%, rgba(49,130,246,1) 100%);
         display: none;
         &.active{
           display: block;
+        }
+        .device{
+          .monitor{
+            background: url(../img/device/monitor/toss-img.jpg) no-repeat 50% 16%/92%;
+          }
+          .tablet{
+            background: url(../img/device/tablet/toss-img.jpg) no-repeat 50% 49%/68%;
+          }
+          .phone{
+            background: url(../img/device/phone/toss-img.jpg) no-repeat 50% 49%/76%;
+          }
         }
       }
       &.baskin-modal{
-        background-color: $baskinrobins-color;
+        // background-color: $baskinrobins-color;
+        background: linear-gradient(225deg, rgba(255,255,255,1) 35%, rgba(255,182,193,1) 100%);
         display: none;
         &.active{
           display: block;
+        }
+        .device{
+          .monitor{
+            background: url(../img/device/monitor/baskin-img.jpg) no-repeat 50% 13%/92%;
+          }
+          .tablet{
+            background: url(../img/device/tablet/baskin-img.jpg) no-repeat 49% 47%/65%;
+          }
+          .phone{
+            background: url(../img/device/phone/baskin-img.jpg) no-repeat 49% 44%/75%;
+          }
         }
       }
       &.lottConf-modal{
-        background-color: #da291c;
+        // background-color: #da291c;
+        background: linear-gradient(225deg, rgba(255,255,255,1) 35%, rgba(218,41,28,1) 100%);
         display: none;
         &.active{
           display: block;
         }
+        .device{
+          .monitor{
+            background: url(../img/device/monitor/lotteconf-img.jpg) no-repeat 50% 13%/94%;
+          }
+          .tablet{
+            background: url(../img/device/tablet/lotteconf-img.jpg) no-repeat 50% 48%/66%;
+          }
+          .phone{
+            background: url(../img/device/phone/lotteconf-img.jpg) no-repeat 50% 43%/74%;;
+          }
+        }
       }
       &.nexongames-modal{
-        background-color: #191b1d;
+        // background-color: #191b1d;
+        background: linear-gradient(225deg, rgba(255,255,255,1) 35%, rgba(25,27,29,1) 100%);
         display: none;
         &.active{
           display: block;
+        }
+        .device{
+          .monitor{
+            background: url(../img/device/monitor/nexongames-img.jpg) no-repeat 50% 15%/93%;
+          }
+          .tablet{
+            background: url(../img/device/tablet/nexongames.img) no-repeat 50% 48%/66%;
+          }
+          .phone{
+            background: url(../img/device/phone/nexongames-img.jpg) no-repeat 52% 45%/74%;
+          }
         }
       }
       width: 100%;
@@ -130,19 +178,13 @@ p,a{
           width: 60%;
           .device{
             .monitor{
-              background: url(../img/device/monitor/baskin-img.jpg) no-repeat 50% 13%/92%;
-              // background-repeat: no-repeat;
-              // background-position: 50% 13%;
-              // background-size: 92%;
               position: absolute;
               img{
-                // max-width: 30%;
                 width: 320px;
                 height: 280px;
               }
             }
-            .tablet{
-              background: url(../img/device/tablet/baskin-img.jpg) no-repeat 49% 47%/65%;
+            .tablet{              
               position: absolute;
               top: 78px;
               left: 222px;
@@ -152,8 +194,7 @@ p,a{
                 height: 290px;
               }
             }
-            .phone{
-              background: url(../img/device/phone/baskin-img.jpg) no-repeat 49% 44%/75%;;
+            .phone{              
               position: absolute;
               top: 217px;
               left: 363px;

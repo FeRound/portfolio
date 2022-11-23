@@ -100,32 +100,68 @@ p, a {
   border-radius: 10px;
 }
 #wrap .modal .inner.toss-modal {
-  background-color: #619bed;
+  background: linear-gradient(225deg, rgb(255, 255, 255) 35%, rgb(49, 130, 246) 100%);
   display: none;
 }
 #wrap .modal .inner.toss-modal.active {
   display: block;
 }
+#wrap .modal .inner.toss-modal .device .monitor {
+  background: url(../img/device/monitor/toss-img.jpg) no-repeat 50% 16%/92%;
+}
+#wrap .modal .inner.toss-modal .device .tablet {
+  background: url(../img/device/tablet/toss-img.jpg) no-repeat 50% 49%/68%;
+}
+#wrap .modal .inner.toss-modal .device .phone {
+  background: url(../img/device/phone/toss-img.jpg) no-repeat 50% 49%/76%;
+}
 #wrap .modal .inner.baskin-modal {
-  background-color: #ffb6c1;
+  background: linear-gradient(225deg, rgb(255, 255, 255) 35%, rgb(255, 182, 193) 100%);
   display: none;
 }
 #wrap .modal .inner.baskin-modal.active {
   display: block;
 }
+#wrap .modal .inner.baskin-modal .device .monitor {
+  background: url(../img/device/monitor/baskin-img.jpg) no-repeat 50% 13%/92%;
+}
+#wrap .modal .inner.baskin-modal .device .tablet {
+  background: url(../img/device/tablet/baskin-img.jpg) no-repeat 49% 47%/65%;
+}
+#wrap .modal .inner.baskin-modal .device .phone {
+  background: url(../img/device/phone/baskin-img.jpg) no-repeat 49% 44%/75%;
+}
 #wrap .modal .inner.lottConf-modal {
-  background-color: #da291c;
+  background: linear-gradient(225deg, rgb(255, 255, 255) 35%, rgb(218, 41, 28) 100%);
   display: none;
 }
 #wrap .modal .inner.lottConf-modal.active {
   display: block;
 }
+#wrap .modal .inner.lottConf-modal .device .monitor {
+  background: url(../img/device/monitor/lotteconf-img.jpg) no-repeat 50% 13%/94%;
+}
+#wrap .modal .inner.lottConf-modal .device .tablet {
+  background: url(../img/device/tablet/lotteconf-img.jpg) no-repeat 50% 48%/66%;
+}
+#wrap .modal .inner.lottConf-modal .device .phone {
+  background: url(../img/device/phone/lotteconf-img.jpg) no-repeat 50% 43%/74%;
+}
 #wrap .modal .inner.nexongames-modal {
-  background-color: #191b1d;
+  background: linear-gradient(225deg, rgb(255, 255, 255) 35%, rgb(25, 27, 29) 100%);
   display: none;
 }
 #wrap .modal .inner.nexongames-modal.active {
   display: block;
+}
+#wrap .modal .inner.nexongames-modal .device .monitor {
+  background: url(../img/device/monitor/nexongames-img.jpg) no-repeat 50% 15%/93%;
+}
+#wrap .modal .inner.nexongames-modal .device .tablet {
+  background: url(../img/device/tablet/nexongames.img) no-repeat 50% 48%/66%;
+}
+#wrap .modal .inner.nexongames-modal .device .phone {
+  background: url(../img/device/phone/nexongames-img.jpg) no-repeat 52% 45%/74%;
 }
 #wrap .modal .inner .cancel-bar {
   cursor: pointer;
@@ -141,7 +177,6 @@ p, a {
   width: 60%;
 }
 #wrap .modal .inner .content .left .device .monitor {
-  background: url(../img/device/monitor/baskin-img.jpg) no-repeat 50% 13%/92%;
   position: absolute;
 }
 #wrap .modal .inner .content .left .device .monitor img {
@@ -149,7 +184,6 @@ p, a {
   height: 280px;
 }
 #wrap .modal .inner .content .left .device .tablet {
-  background: url(../img/device/tablet/baskin-img.jpg) no-repeat 49% 47%/65%;
   position: absolute;
   top: 78px;
   left: 222px;
@@ -159,7 +193,6 @@ p, a {
   height: 290px;
 }
 #wrap .modal .inner .content .left .device .phone {
-  background: url(../img/device/phone/baskin-img.jpg) no-repeat 49% 44%/75%;
   position: absolute;
   top: 217px;
   left: 363px;
