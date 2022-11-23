@@ -1,6 +1,32 @@
 @import "./var.scss";
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
 *{padding:0;margin: 0;box-sizing: border-box;text-decoration: none;list-style: none;font-family: 'Noto Sans KR', sans-serif;}
+h1{
+  font-size: 4rem;
+  text-align: center;
+  padding: 100px 0;
+  color: #3F72AF;
+}
+h2{
+  font-size: 22px;
+  position: absolute;
+  bottom:-40px;
+}
+h3{
+  font-family: 'Gamja Flower', cursive;
+  margin: 30px 0;
+  text-align: center;
+  font-size: 38px;
+  color:$modal-main-title-color;
+}
+h4{
+  font-size: 34px;
+  margin-bottom: 20px;
+  & ~ h4{
+    margin-top: 30px;
+  }
+}
 #wrap{
   background: #F9F7F7;
   &.on{
@@ -11,12 +37,6 @@
           opacity: .5;
         }
       }
-  }
-  h1{
-    font-size: 4rem;
-    text-align: center;
-    padding: 100px 0;
-    color: #3F72AF;
   }
   .items{
     display: grid;
@@ -30,11 +50,6 @@
       height: 300px;
       border:1px solid rgba(0,0,0,.3);
       border-radius: 7px;
-      h2{
-        font-size: 22px;
-        position: absolute;
-        bottom:-40px;
-      }
     }
     .item1{
       background:url(../img/item1.jpg) no-repeat center/cover;
@@ -50,7 +65,7 @@
     }
   }
   .modal{
-    position: absolute;
+    position: fixed;
     left:50%;
     top:50%;
     transform: translate(-50%, -50%);
@@ -98,12 +113,6 @@
         float: right;
         text-align: right;
         font-size: 34px;;
-      }
-      h3{
-        margin: 30px 0;
-        text-align: center;
-        font-size: 28px;
-        color:$modal-main-title-color;
       }
       .content{    
         position: relative; 
@@ -170,13 +179,6 @@
         .right{
           width: 40%;
           .tools{
-            h4{
-              font-size: 34px;
-              margin-bottom: 20px;
-              & ~ h4{
-                margin-top: 30px;
-              }
-            }
             p{
               color:#666666;
               font-size: 18px;
