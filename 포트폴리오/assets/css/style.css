@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -6,6 +7,35 @@
   text-decoration: none;
   list-style: none;
   font-family: "Noto Sans KR", sans-serif;
+}
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  padding: 100px 0;
+  color: #3F72AF;
+}
+
+h2 {
+  font-size: 22px;
+  position: absolute;
+  bottom: -40px;
+}
+
+h3 {
+  font-family: "Gamja Flower", cursive;
+  margin: 30px 0;
+  text-align: center;
+  font-size: 38px;
+  color: #282828;
+}
+
+h4 {
+  font-size: 34px;
+  margin-bottom: 20px;
+}
+h4 ~ h4 {
+  margin-top: 30px;
 }
 
 #wrap {
@@ -16,12 +46,6 @@
 }
 #wrap.on .items .item {
   opacity: 0.5;
-}
-#wrap h1 {
-  font-size: 4rem;
-  text-align: center;
-  padding: 100px 0;
-  color: #3F72AF;
 }
 #wrap .items {
   display: grid;
@@ -37,11 +61,6 @@
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 7px;
 }
-#wrap .items .item h2 {
-  font-size: 22px;
-  position: absolute;
-  bottom: -40px;
-}
 #wrap .items .item1 {
   background: url(../img/item1.jpg) no-repeat center/cover;
 }
@@ -55,7 +74,7 @@
   background: url(../img/item4.jpg) no-repeat center/cover;
 }
 #wrap .modal {
-  position: absolute;
+  position: fixed;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -105,12 +124,6 @@
   float: right;
   text-align: right;
   font-size: 34px;
-}
-#wrap .modal .inner h3 {
-  margin: 30px 0;
-  text-align: center;
-  font-size: 28px;
-  color: #282828;
 }
 #wrap .modal .inner .content {
   position: relative;
@@ -169,13 +182,6 @@
 }
 #wrap .modal .inner .content .right {
   width: 40%;
-}
-#wrap .modal .inner .content .right .tools h4 {
-  font-size: 34px;
-  margin-bottom: 20px;
-}
-#wrap .modal .inner .content .right .tools h4 ~ h4 {
-  margin-top: 30px;
 }
 #wrap .modal .inner .content .right .tools p {
   color: #666666;
